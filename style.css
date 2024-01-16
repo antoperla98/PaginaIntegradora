@@ -1,0 +1,222 @@
+#header {
+    background-color:#dbe6ef;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.conteinerimagen {
+    height: 30%;
+}
+
+.logo {
+    width: 10%;
+}
+
+#navopciones {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+}
+
+.NavHogar {
+    text-decoration: none;
+    color: black;
+    width: 13%;
+    font-size: larger;
+}
+
+.NavAdopcion {
+    text-decoration: none;
+    color: black;
+    width: 40%;
+    font-size: larger;
+}
+
+.NavDonacion {
+    text-decoration: none;
+    color: black;
+    width: 15%;
+    font-size: larger;
+}
+
+.NavHogar:hover {
+    color: #1883b3;
+}
+
+.NavAdopcion:hover {
+    color: #1883b3;
+}
+
+.NavDonacion:hover {
+    color: #1883b3;
+}
+
+.d-block {
+    width: 100%;
+    height: 100%;
+}
+
+#portada {
+    background-color: #dbe6ef;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#infohogar {
+    width: 20%;
+    font-size: large;
+}
+
+.botonadoptar {
+    background-color: #9876d5a8;
+    border: white;
+    width: 30%;
+    height: 10%;
+}
+
+.botondonar {
+    background-color: #9876d5a8;
+    border: white;
+    width: 30%;
+    height: 10%;
+}
+
+.botonadoptar:hover {
+    background-color: #3b039fc4;
+    font-weight: bold; 
+}
+
+.botondonar:hover {
+    background-color: #3b039fc4;
+    font-weight: bold; 
+}
+
+.imgportada {
+    width: 30%;
+}
+
+#textoinformativo {
+    background-color: #dbe6ef;
+    font-size: larger;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Donaciones {
+    background-color: #dbe6ef;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+#donacioncards {
+    display: flex;
+    justify-content: center;
+}
+
+.CajaDonar1 {
+    width: 20%;
+}
+
+.imgMedicacion {
+    width: 64%;
+}
+
+.imgMedicacion:hover {
+    transform: scale(1.2);
+}
+
+.CajaDonar2 {
+    width: 20%;
+}
+
+.imgInsumos {
+    width: 84%;
+}
+
+.imgInsumos:hover {
+    transform: scale(1.2);
+}
+
+.CajaDonar3 {
+    width: 20%;
+}
+
+.imgAlimento {
+    width: 90%;
+}
+
+.imgAlimento:hover {
+    transform: scale(1.2);
+}
+
+.CajaDonar4 {
+    width: 20%;
+}
+
+.imgDinero {
+    width: 95%;
+}
+
+.imgDinero:hover {
+    transform: scale(1.2);
+}
+
+.cajabtdonar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Btdonar {
+    background-color: #9876d5a8;
+    border: white;
+    width: 11%;
+    height: 8%;
+    font-family: none;
+    font-weight: bold;
+}
+
+.Btdonar:hover {
+    background-color: #3b039fc4;
+    border-color: black;
+}
+
+#Contactos {
+    background-color: #dbe6ef;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.infocontacto {
+    width: 35%;
+}
+
+.datos {
+    width: 3%;
+}
+
+.mapa {
+    width: 150%;
+    height: 97%;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    text-align-last: center;
+    background-color: #dbe6ef;
+}
+
+.cajafooter {
+    width: 15%;
+}
+
+.logofooter {
+    width: 55%;
+}
