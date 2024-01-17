@@ -1,5 +1,5 @@
 #header {
-    background-color:#dbe6ef;
+    background-color: #dbe6ef;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -86,12 +86,12 @@
 
 .botonadoptar:hover {
     background-color: #3b039fc4;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .botondonar:hover {
     background-color: #3b039fc4;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .imgportada {
@@ -219,4 +219,164 @@
 
 .logofooter {
     width: 55%;
+}
+
+/* adopciones */
+
+.meadoptas {
+    width: 30%;
+}
+
+.meadoptas img {
+    width: 117%;
+    margin-top: 20px;
+    margin-left: 22px;
+}
+
+#PregFrecuentes {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.titulocuestions {
+    border: groove;
+    border-color: #0000ff7d;
+    padding: 10px;
+}
+
+.botondonacion {
+    background-color: #9876d5a8;
+    float: left;
+    height: 15%;
+    width: 45%;
+}
+
+.botondonacion:hover {
+    background-color: #0000ff9e;
+    font-weight: bold;
+}
+
+.botontransito {
+    background-color: #9876d5a8;
+    width: 45%;
+    height: 15%;
+    margin-left: 22px;
+}
+
+.botontransito:hover {
+    background-color: #0000ff9e;
+    font-weight: bold;
+}
+
+/* Formulario Adopciones */
+
+#textform {
+    background-color: #dbe6ef;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#Formulario {
+    margin-bottom: 0px;
+    display: flow;
+    text-align: center;
+}
+
+.form-group1 {
+    background-color: #dbe6ef;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.form-group {
+    background-color: #dbe6ef;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-group4 {
+    background-color: #dbe6ef;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#btenviar {
+    background-color: #dbe6ef;
+    padding: 15px
+}
+
+.botonenviar {
+    width: 10%;
+    height: 7%;
+    background-color: #9876d5a8;
+}
+
+.botonenviar:hover {
+    background-color: #0000ff9e;
+    font-weight: bold;
+}
+
+.botonenviara {
+    text-decoration: none;
+    color: black;
+}
+
+/* Agradecimiento */
+
+.textagradecimiento {
+    background-color: #dbe6ef;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar {
+
+}
+
+@media screen and (max-width: 414px) {
+
+    #navopciones {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 95px;
+        width: 35%;
+        display: flex;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        font-size: larger;
+    }
+
+    .d-block {
+        width: 100%;
+        height: 30%;
+    }
+
+    .imgportada {
+        display: none;
+    }
+
+    #infohogar {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    
+    .navbar {
+        display: none;
+    }
 }
