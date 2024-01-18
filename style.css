@@ -341,6 +341,7 @@
 
 }
 
+
 @media screen and (max-width: 414px) {
 
     #navopciones {
@@ -371,6 +372,44 @@
 
     #infohogar {
         width: 60%;
+    }
+
+    #donacioncards {
+        display: flex;
+        flex-flow: column;
+        width: 200%;
+    }
+
+    .CajaDonar1 {
+        width: 50%;
+    }
+
+    .CajaDonar2 {
+        width: 50%;
+    }
+
+    .CajaDonar3 {
+        width: 50%;
+    }
+
+    .CajaDonar4 {
+        width: 50%;
+    }
+
+    .Btdonar {
+        width: 40%;
+    }
+
+    #Contactos {
+        display: flow;
+    }
+
+    .infocontacto {
+        width: 240%;
+    }
+
+    .datos {
+        padding-right: 15px;
     }
 }
 
