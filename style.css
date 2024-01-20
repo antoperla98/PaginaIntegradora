@@ -356,8 +356,12 @@
     width: 24%;
 }
 
+.aheader {
+    width: 65%;
+}
 
-@media screen and (max-width: 414px) {
+
+@media screen and (max-width: 414px) {       /* responsive celulares */
 
     #navopciones {
         flex-direction: column;
@@ -526,5 +530,53 @@
 
     .navbar {
         display: none;
+    }
+}
+
+@media screen and (min-width: 800px) (max-width: 801px) {        /* respondive tablets */
+    
+    .d-block {
+        height: 46%;
+    }
+
+    #infohogar {
+        width: 35%;
+    }
+
+    .imgportada {
+        width: 40%;
+    }
+
+    .Btdonar {
+        width: 19%;
+        font-size: larger;
+    }
+
+    .botonenviar {
+        height: 4%;
+    }
+
+}
+
+@media screen and (max-width: 801px) {
+    .d-block {
+        height: 40%;
+    }
+
+    #infohogar {
+        width: 35%;
+    }
+
+    .imgportada {
+        width: 40%;
+    }
+
+    .Btdonar {
+        width: 19%;
+        font-size: larger;
+    }
+
+    .botonenviar {
+        height: 4%;
     }
 }
