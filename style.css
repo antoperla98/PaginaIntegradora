@@ -3,6 +3,10 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
 }
 
 .conteinerimagen {
@@ -17,6 +21,9 @@
     display: flex;
     justify-content: end;
     text-align: center;
+    display: flex;
+    gap: 5rem;
+    list-style-type: none;
 }
 
 .NavHogar {
@@ -337,15 +344,26 @@
     text-align: center;
 }
 
-.navbar {
+.botonmenu {
+    display: none;
+}
 
+.botonmenuc {
+    display: none;
+}
+
+.form-group4 textarea {
+    width: 24%;
 }
 
 
 @media screen and (max-width: 414px) {
 
     #navopciones {
-        display: none;
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+        background-color: #dbe6ef;
     }
 
     .logo {
@@ -411,10 +429,101 @@
     .datos {
         padding-right: 15px;
     }
+
+    .botonmenu {
+        display: block;
+        background-color: #9876d5a8;
+        padding: 10px;
+    }
+
+    .conteinerimagen {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #dbe6ef;
+        padding: 1rem;
+        opacity: 0;
+        visibility: visible;
+    }
+
+    .btmenu {
+        text-decoration: none;
+        color: black;
+    }
+
+    .botonmenu:hover {
+        background-color: #0000ff9e;
+        font-weight: bold;
+    }
+
+    .logofooter {
+        width: 100%;
+    }
+
+    /* hogar responsive */
+
+    .meadoptas {
+        display: none;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 30%;
+    }
+
+    /* formularios */
+
+    .form-group1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-group4 {
+        display: flex;
+        justify-content: center;
+        padding-right: 25px;
+    }
+
+    .form-group1 label {
+        padding-right: 15px;
+    }
+
+    .form-group label {
+        padding-right: 15px;
+    }
+
+    .form-group4 label {
+        padding-right: 15px;
+    }
+
+    .botonenviar {
+        width: 25%;
+    }
+
+    .form-group4 textarea {
+        width: 117%;
+    }
+
+    /* formu enviar */
+
 }
 
 @media screen and (min-width: 414px) {
-    
+
     .navbar {
         display: none;
     }
