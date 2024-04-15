@@ -1,12 +1,103 @@
-#header {
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Carrusel */
+
+.carousel {
+    width: 60%; /* Ancho del carrusel */
+    margin: 0 auto;
+    overflow: hidden; /* Oculta el contenido fuera del área visible */
+    height: 455px;
+    padding-top: 80px;
+    z-index: 0;
+  }
+
+.carousel-inner {
+    display: flex; /* Muestra los elementos en línea */
+    animation: desplazamiento 10s infinite; /* Duración de la animación y bucle infinito */
+  }
+  
+.carousel-item {
+    flex: 0 0 100%; /* Establece el ancho de cada elemento del carrusel */
+  }
+  
+.carousel-item img {
+    width: 100%; /* Ancho de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Ajusta la imagen para que llene el contenedor */
+}
+  
+@keyframes desplazamiento {
+    0% {
+      transform: translateX(0); /* Sin desplazamiento al inicio */
+    }
+    16.66% {
+      transform: translateX(0); /* No hay desplazamiento entre la primera y segunda imagen */
+    }
+    33.33% {
+      transform: translateX(-100%); /* Desplazamiento a la segunda imagen */
+    }
+    50% {
+      transform: translateX(-100%); /* No hay desplazamiento entre la segunda y tercera imagen */
+    }
+    66.66% {
+      transform: translateX(-200%); /* Desplazamiento a la tercera imagen */
+    }
+    83.33% {
+      transform: translateX(-200%); /* No hay desplazamiento entre la tercera y cuarta imagen */
+    }
+    100% {
+      transform: translateX(-300%); /* Desplazamiento a la cuarta imagen */
+    }
+}
+
+.header {
     background-color: #dbe6ef;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    height: 80px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 25px;
+    align-items: center;
+    padding: 0px 50px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.navbar ul {
+    justify-content: flex-end;
+    list-style-type: none;
+    display: flex;
+    gap: 100%;
+    font-size: large;
+}
+
+.navbar ul :hover {
+    color: #1883b3;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar i {
+    font-size: 30px;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
 }
 
 .conteinerimagen {
@@ -14,7 +105,7 @@
 }
 
 .logo {
-    width: 10%;
+    width: 6%;
 }
 
 #navopciones {
@@ -68,7 +159,7 @@
     background-color: #dbe6ef;
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 7%;
     padding-bottom: 40px;
 }
 
@@ -105,6 +196,36 @@
     width: 30%;
 }
 
+.titulohogar {
+    height: 30%;
+}
+
+.informacionhogar {
+    width: 100%;
+    height: 60%;
+}
+
+.titulodonacion {
+    height: 10%;
+}
+
+.titulo {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+#infocont {
+    font-size: x-large; 
+    font-weight: bold; 
+    display: flex; 
+    height: 8%;
+    padding-bottom: 45px;
+}
+
+#infocontp {
+    height: 20%;
+}
+
 #textoinformativo {
     background-color: #dbe6ef;
     font-size: larger;
@@ -115,7 +236,7 @@
 
 #Donaciones {
     background-color: #dbe6ef;
-    padding-top: 1px;
+    padding-top: 3%;
     padding-bottom: 1px;
     text-align: center;
 }
@@ -205,7 +326,7 @@
 }
 
 .datos {
-    width: 3%;
+    width: 4%;
 }
 
 .mapa {
@@ -244,6 +365,20 @@
     display: flex;
     justify-content: center;
     font-size: larger;
+    padding-top: 10%;
+}
+
+#PregFrec {
+    padding-top: 2%;
+}
+
+.informacioncuestions {
+    height: 16%;
+    padding-top: 8px;
+}
+
+#Formulario {
+    padding-top: 6%;
 }
 
 .titulocuestions {
@@ -335,9 +470,7 @@
 
 .textagradecimiento {
     background-color: #dbe6ef;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 60px;
+    padding-top: 10%;
     padding-bottom: 60px;
     display: flex;
     justify-content: center;
@@ -361,7 +494,59 @@
 }
 
 
-@media screen and (max-width: 414px) {       /* responsive celulares */
+@media (max-width: 576px) { /* responsive celulares */
+
+    .navbar ul {
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+        gap: 25%;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .titulohogar {
+        padding-top: 20%;
+    }
+
+    .informacionhogar {
+        padding-top: 10%;
+    }
+
+    .textagradecimiento {
+        padding-top: 25%;
+    }
+
+    #portada {
+        height: 65%;
+    }
+
+    #PregFrecuentes {
+        padding-top: 25%;
+        height: 65%;
+    }
+
+    .informacioncuestions {
+        padding-top: 15px;
+        height: 20%;
+    }
 
     #navopciones {
         flex-direction: column;
@@ -371,8 +556,7 @@
     }
 
     .logo {
-        padding-left: 95px;
-        width: 35%;
+        width: 22%;
         display: flex;
     }
 
@@ -402,6 +586,59 @@
         width: 200%;
     }
 
+    .imgMedicacion{
+        width: 50%;
+    }
+
+    .imgInsumos{
+        width: 50%;
+    }
+
+    .imgAlimento{
+        width: 50%;
+    }
+
+    .imgDinero {
+        width: 50%;
+    }
+
+    .titulo {
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+
+    .imgMedicacion:hover {
+        transform: none;
+    }
+
+    .imgInsumos:hover {
+        transform: none;
+    }
+
+    .imgAlimento:hover {
+        transform: none;
+    }
+    
+    .imgDinero:hover {
+        transform: none;
+    }
+
+    .imgInsumos{
+        padding-top: 7%;
+    }
+
+    .imgAlimento{
+        padding-top: 7%;
+    }
+
+    .imgInsumos{
+        padding-top: 7%;
+    }
+
+    .imgDinero{
+        padding-top: 7%;
+    }
+
     .CajaDonar1 {
         width: 50%;
     }
@@ -427,11 +664,15 @@
     }
 
     .infocontacto {
-        width: 240%;
+        width: 100%;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        padding-top: 45px;
     }
 
     .datos {
         padding-right: 15px;
+        width: 6%;
     }
 
     .botonmenu {
@@ -522,19 +763,90 @@
         width: 117%;
     }
 
+    #textform {
+        padding-top: 25%;
+    }
+
     /* formu enviar */
 
 }
 
-@media screen and (min-width: 414px) {
 
-    .navbar {
-        display: none;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {       /* respondive tablets */
+   
+    .logo {
+        width: 11%;
+        display: flex;
     }
-}
 
-@media screen and (min-width: 800px) (max-width: 801px) {        /* respondive tablets */
+    .navbar ul {
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        background-color: #dbe6ef;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+        gap: 25%;
+    }
+
+    #portada {
+        padding-top: 5%;
+    }
+
+    .textagradecimiento {
+        padding-top: 40%;
+    }
+
+    .titulodonacion {
+        height: 6%;
+    }
     
+    .botonadoptar {
+        width: 40%;
+        height: 20%;
+        font-size: large;
+    }
+
+    .botondonar {
+        width: 40%;
+        height: 20%;
+        font-size: large;
+    }
+
+    .informacionhogar {
+        width: 100%;
+        height: 70%;
+        font-size: larger;
+    }
+
+    .textoinfo {
+        font-size: larger;
+    }
+
+    .parrafa {
+        font-size: larger;
+    }
+
+    #Formulario {
+        padding-top: 10%;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
     .d-block {
         height: 46%;
     }
@@ -559,12 +871,13 @@
 }
 
 @media screen and (max-width: 801px) {
+
     .d-block {
-        height: 40%;
+        height: 55%;
     }
 
     #infohogar {
-        width: 35%;
+        width: 66%;
     }
 
     .imgportada {
