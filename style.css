@@ -9,10 +9,10 @@
 /* Carrusel */
 
 .carousel {
-    width: 60%; /* Ancho del carrusel */
+    width: 100%; /* Ancho del carrusel */
     margin: 0 auto;
     overflow: hidden; /* Oculta el contenido fuera del área visible */
-    height: 455px;
+    height: 100%;
     padding-top: 80px;
     z-index: 0;
   }
@@ -28,7 +28,7 @@
   
 .carousel-item img {
     width: 100%; /* Ancho de las imágenes */
-    height: auto; /* Altura automática para mantener la proporción */
+    height: 100%; /* Altura automática para mantener la proporción */
     object-fit: cover; /* Ajusta la imagen para que llene el contenedor */
 }
   
@@ -232,6 +232,8 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #Donaciones {
@@ -256,6 +258,11 @@
 
 .imgMedicacion:hover {
     transform: scale(1.2);
+}
+
+.parrafo {    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .CajaDonar2 {
@@ -517,13 +524,17 @@
         display: flex;
         gap: 25%;
     }
-
+    
     .carousel {
-        display: none;
+        height: 70%;
+    }
+
+    .carousel-item img {
+        height: 146%;
     }
 
     .titulohogar {
-        padding-top: 20%;
+        padding-top: 13%;
     }
 
     .informacionhogar {
@@ -556,7 +567,7 @@
     }
 
     .logo {
-        width: 22%;
+        width: 18%;
         display: flex;
     }
 
@@ -772,11 +783,15 @@
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {       /* respondive tablets */
+@media only screen and (min-width: 577px) and (max-width: 1024px) {       /* respondive tablets */
    
     .logo {
-        width: 11%;
+        width: 8%;
         display: flex;
+    }
+
+    .carousel {
+        height: 66%;
     }
 
     .navbar ul {
@@ -810,7 +825,7 @@
     }
 
     .titulodonacion {
-        height: 6%;
+        height: 10%;
     }
     
     .botonadoptar {
@@ -827,12 +842,15 @@
 
     .informacionhogar {
         width: 100%;
-        height: 70%;
+        height: 80%;
         font-size: larger;
     }
 
     .textoinfo {
         font-size: larger;
+        margin-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .parrafa {
@@ -841,10 +859,6 @@
 
     #Formulario {
         padding-top: 10%;
-    }
-
-    .carousel {
-        width: 100%;
     }
 
     .d-block {
@@ -856,12 +870,13 @@
     }
 
     .imgportada {
-        width: 40%;
+        width: 28%;
+        font-size: small;    
     }
 
     .Btdonar {
-        width: 19%;
-        font-size: larger;
+        width: 10%;
+        font-size: small;
     }
 
     .botonenviar {
@@ -885,8 +900,8 @@
     }
 
     .Btdonar {
-        width: 19%;
-        font-size: larger;
+        width: 14%;
+        font-size: small;
     }
 
     .botonenviar {
