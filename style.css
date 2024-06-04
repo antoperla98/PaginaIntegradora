@@ -222,7 +222,7 @@
     padding-bottom: 45px;
 }
 
-#infocontp {
+.infocontp {
     height: 20%;
 }
 
@@ -328,7 +328,7 @@
     justify-content: center;
 }
 
-.infocontacto {
+#infocontacto {
     width: 35%;
 }
 
@@ -397,6 +397,7 @@
 .botondonacion {
     background-color: #9876d5a8;
     float: left;
+    border: 0px;
     height: 15%;
     width: 45%;
 }
@@ -409,6 +410,7 @@
 .botontransito {
     background-color: #9876d5a8;
     width: 45%;
+    border: 0px;
     height: 15%;
     margin-left: 22px;
 }
@@ -534,7 +536,7 @@
     }
 
     .titulohogar {
-        padding-top: 13%;
+        padding-top: 25%;
     }
 
     .informacionhogar {
@@ -674,7 +676,7 @@
         display: flow;
     }
 
-    .infocontacto {
+    #infocontacto {
         width: 100%;
         padding-left: 15px;
         padding-bottom: 20px;
@@ -786,7 +788,7 @@
 @media only screen and (min-width: 577px) and (max-width: 1024px) {       /* respondive tablets */
    
     .logo {
-        width: 8%;
+        width: 12%;
         display: flex;
     }
 
@@ -817,11 +819,27 @@
     }
 
     #portada {
-        padding-top: 5%;
+        padding-top: 20%;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .titulo {
+        font-size: larger;
+    }
+
+    #PregFrecuentes {
+        padding-top: 16%;
+        padding-bottom: 50px;
     }
 
     .textagradecimiento {
         padding-top: 40%;
+        padding-bottom: 39px;
+    }
+
+    .cajaboton {
+        padding-top: 15px;
     }
 
     .titulodonacion {
